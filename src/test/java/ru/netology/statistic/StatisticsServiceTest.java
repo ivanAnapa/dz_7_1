@@ -17,4 +17,16 @@ public class StatisticsServiceTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void findMaxFomLowToHigh() {
+        StatisticsService service = new StatisticsService();
+
+        long[] incomesInBillions = {0, 1};
+        long expected = 1;
+
+        long actual = service.findMax(incomesInBillions);
+
+        assertEquals(expected, actual);
+    }
 }
